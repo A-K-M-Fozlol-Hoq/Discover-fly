@@ -185,9 +185,14 @@ nav ul li a:hover, a.active{
     margin-bottom:20px;
     position:relative;
     animation:text 3s 1;
-    }
-
+}
 .text-2{
+    display: block;
+    background-color: lightgrey;
+    color: blue;
+    margin:10px 0px;  
+}
+.text-3{
     font-size:30px;
     color:#6ab04c;
 }

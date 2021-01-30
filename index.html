@@ -112,7 +112,10 @@
 
     <section onclick="hideComponent('check-out')" class="check-out" id="check-out">
         <span class="text-1">Check Out Complete!</span>
-        <span class="text-2">Thank You!</span>
+        <h1 class="text-2">Your Orders</h1>
+        <span class="text-2">First Class ($150): <span id="total-first"></span>Tickets</span>
+        <span class="text-2">Economy ($100):<span id="total-economy"></span>Tickets</span>
+        <span class="text-3">Thank You!</span>
         <button class="btn">OK</button>
     </section>
 
@@ -147,6 +150,10 @@
 
         function showComponent(id){
             document.getElementById(id).style.display="block";
+            const totalFirstClass= getInputValue('first-class');
+            const totalEconomyClass= getInputValue('economy-class');
+            document.getElementById('total-first').innerText=totalFirstClass;
+            document.getElementById('total-economy').innerText=totalEconomyClass;
         }
 
 
